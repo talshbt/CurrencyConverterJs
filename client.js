@@ -8,9 +8,6 @@ function fromFunction() {
     var x = document.getElementById("mySelect-from").value;
 
     document.getElementById('from-input').value = x;
-
-
-
   }
 
   function toFunction() {
@@ -31,8 +28,6 @@ function fromFunction() {
           fetch(url)
           .then(res => res.text()) 
           .then(i => document.getElementById('result').value = i)
-
-          // document.getElementById('result').value = input_val_to + " " +input_val_from +" "+ amount_val;
       });
 
 
@@ -60,6 +55,5 @@ function fromFunction() {
       var serverUrl = 'http://localhost:5555/';
 
 
-      getDict('http://localhost:5555/getcurrencydict');
-      getResponse('http://localhost:5555/currency/100/USD/ILS');
-      console.log(createUrl(100, 'EUR', 'ILS'));
+      // getDict('http://localhost:5555/getcurrencydict');
+      // getResponse('http://localhost:5555/currency/100/USD/ILS');
