@@ -15,28 +15,23 @@
     </head>
 
     <body>
-        <div id="main_wrapper">
-            <header>
-                <div id="main_title">
-                    <h1>Currency Converter</h1>
-                </div>
-                
-            </header>
-            
-            <div id="banner_image">
-                <div id="banner_description">
-                </div>
-            </div>
-            
-        </div>
-
-
-<div class="container mt-3">
       
-        
+
+
+    <div class="container mt-3">
+        <header>
+            <h1>Currency Converter</h1>
+              </header>  
+                <div id="banner_image">
+                    <div id="banner_description">
+                    </div>
+                </div>
+
+        <div class="input-group mt-3 mb-3">
+
         <form>
-            
           <div class="input-group mt-5 mb-3">
+
             <div class="input-group-prepend">
                     <select id="mySelect-from" onchange="fromFunction()">
 
@@ -44,51 +39,49 @@
                     <option value="ILS">ILS</option>
                     <option value="USD">USD</option>
                   </select>
-            </div>
+                </div>
+
             <input type="text" id = "from-input" class="form-control" placeholder="Currency">
-          </div>
+         </div>
 
               <div class="input-group mt-3 mb-3">
-                <div class="input-group-prepend">
+                  <div class="input-group-prepend">
 
                         <select id="mySelect-to" onchange="toFunction()">
                                 <option value="EUR">EUR</option>
                                 <option value="ILS">ILS</option>
                                 <option value="USD">USD</option>
                               </select>
+                            </div>
 
-                </div>
                 <input type="text" id = "to-input" class="form-control" placeholder="Currency">
               </div>
-      
-      
+
               <div class="form-group row ">
                       <label for="inputPassword" class="col-sm-2 col-form-label ">Amount</label>
                       <div class="col-sm-10">
-                        <input type="text" class="form-control" id="inputamount" placeholder="Amount">
+                        <input type="text" class="form-control" id="inputamount" placeholder="Amount"><br>
               </div>
-
-                <div class="col mt-5 mb-3">
-
+                
+                <div class="container">
+                        <form action="/action_page.php">
+                        
                         <button id="add-btn" type="button" class="btn btn-primary">Convert</button>
-                        <input type="reset" id = "reset-btn" >
-                
-                                    
-                        <input type="text" id ="result" class="form-control col-sm-2" STYLE="color: #FFFFFF; font-family: Verdana; font-weight: bold; font-size: 12px; background-color: #72A4D2;">
-        
-                   
-      
-                </div>
 
+                        <input type="reset" id = "reset-btn" ><br>
 
-                
+                        <div class="form-group">
+                                <br><label for="pwd">Result:</label>
 
-
-            </form> 
-
-
-                          
-                <script src="client.js"></script>
-
+                                <input type="text" id ="result" class="form-control" STYLE="color: #FFFFFF; font-family: Verdana; font-weight: bold;  background-color: #72A4D2;">
+                            </div>
+                        
+                        </form>
+                      </div>
+                    </form> 
+        </div>
+                              
+        <script src="client.js"></script>
+            
     </body>
 </html>
