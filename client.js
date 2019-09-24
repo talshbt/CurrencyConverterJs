@@ -56,4 +56,3 @@ function fromFunction() {
 
 
       // getDict('http://localhost:5555/getcurrencydict');
-      // getResponse('http://localhost:5555/currency/100/USD/ILS');
